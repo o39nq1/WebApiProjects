@@ -16,7 +16,6 @@
             //teszteléshet .innerHTML = `${sor}:${oszlop}`
             ujElemDiv.innerText = `${sor}:${oszlop}`;
             //legyen az innerHTML a megfelelő szám
-
             //új elem div-et vedd fel a sor elemei közé
             ujDiv.appendChild(ujElemDiv); 
         }
