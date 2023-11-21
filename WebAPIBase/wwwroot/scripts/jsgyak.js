@@ -14,21 +14,18 @@
             //új elem div osztálylistájához add hozzá az "elem"-et
             ujElemDiv.classList.add('sor');
             //teszteléshet .innerHTML = `${sor}:${oszlop}`
-            ujElemDiv.innerText = `${sor}:${oszlop}`;
+            ujElemDiv.innerText = faktoriális(sor / (faktoriális(oszlop) * faktoriális(sor-oszlop)));
             //legyen az innerHTML a megfelelő szám
             //új elem div-et vedd fel a sor elemei közé
             ujDiv.appendChild(ujElemDiv); 
         }
     }
-
-    var faktoriális = function (n) {
-        let er = 1;
-        for (let i = 2; i <= n; i++) {
-            er = er * i;
-        }
-        return er;
-    }
-
 };
-
+var faktoriális = function (n) {
+    let er = 1;
+    for (let i = 2; i <= n; i++) {
+        er = er * i;
+    }
+    return er;
+}
 
