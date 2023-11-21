@@ -14,7 +14,7 @@
             //új elem div osztálylistájához add hozzá az "elem"-et
             ujElemDiv.classList.add('sor');
             //teszteléshet .innerHTML = `${sor}:${oszlop}`
-            ujElemDiv.innerText = faktoriális(sor / (faktoriális(oszlop) * faktoriális(sor-oszlop)));
+            ujElemDiv.innerText = faktoriális(sor) / (faktoriális(oszlop) * faktoriális(sor-oszlop));
             //legyen az innerHTML a megfelelő szám
             //új elem div-et vedd fel a sor elemei közé
             ujDiv.appendChild(ujElemDiv); 
